@@ -6,6 +6,7 @@ const connectDB = require("./config/db");
 
 const leadRoutes = require("./routes/lead.routes");
 const trackingRoutes = require("./routes/tracking.routes");
+const { getDashboard } = require("./controllers/lead.controller");
 
 const app = express();
 
@@ -14,6 +15,7 @@ connectDB();
 app.use(cors());
 app.use(express.json());
 
+app.get("/api/dashboard", getDashboard);
 app.use("/api/leads", leadRoutes);
 app.use("/track", trackingRoutes);
 
