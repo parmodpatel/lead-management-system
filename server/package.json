@@ -17,6 +17,7 @@
     "mongodb": "^7.4.0",
     "mongoose": "^9.7.2",
     "nodemailer": "^9.0.1",
+    "resend": "^6.16.0",
     "uuid": "^14.0.1"
   },
   "devDependencies": {
