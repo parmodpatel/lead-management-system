@@ -1,1 +1,18 @@
+# Ignore local environment variable secrets
 .env
+.env.local
+
+# Ignore operating system specific metadata
+.DS_Store
+Thumbs.db
+
+# Ignore package dependencies (Node/Python/Java)
+node_modules/
+__pycache__/
+.venv/
+target/
+
+# Ignore log outputs and build folders
+*.log
+dist/
+build/
